@@ -1,4 +1,19 @@
-# Food_Vision_101
+# Food_Vision_101 
+
+As an introductory project to myself, I built an **end-to-end CNN Image Classification Model** which identifies the food in your image.
+
+I worked out with a pretrained Image Classification Model that comes with Keras and then retrained it on the infamous **Food101 Dataset**.
+
+
+**Fun Fact :**
+
+The Model actually beats the DeepFood Paper's model which also trained on the same dataset.
+ 
+The Accuracy of [**DeepFood**](https://arxiv.org/abs/1606.05675) was **77.4%** and our model's is **85%**. Difference of **8%** ain't much but the interesting thing is, DeepFood's model took 2-3 days to train while our's was around 60min.
+
+> **Dataset :** `Food101`
+
+> **Model :** `EfficientNetB1`
 We're going to be building Food Vision Big™, using all of the data from the Food101 dataset.
 
 Yep. All 75,750 training images and 25,250 testing images.
