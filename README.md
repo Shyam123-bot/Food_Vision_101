@@ -76,12 +76,11 @@ As we are dealing with a complex Neural Network (EfficientNetB0) its a good prac
 
  ![image](https://user-images.githubusercontent.com/61462986/202082047-6690d7cd-1999-4edc-9dc1-53fb9780ee89.png)
 
-
+## Confusion Matrix
 
 ![image](https://user-images.githubusercontent.com/61462986/202082179-3337c5d7-fa06-4589-9050-1c2af1785808.png)
 
 
-![image](https://user-images.githubusercontent.com/61462986/202080762-3dc53e68-dda8-42b8-9a60-16ce9b361967.png)
 
 ## Custom Prediction
 
