@@ -64,20 +64,26 @@ As we are dealing with a complex Neural Network (EfficientNetB0) its a good prac
  
  * **ReduceLROnPlateau :** Reduce learning rate when a metric has stopped improving.
  
- Loss vs Epochs
+ ## Loss vs Epochs
+ 
 ![image](https://user-images.githubusercontent.com/61462986/202082223-83c3a8f2-26c9-455e-97d5-ee833a4b10cc.png)
 
-Accuracy vs Epochs
+## Accuracy vs Epochs
+
 ![image](https://user-images.githubusercontent.com/61462986/202082253-0d28ea8e-72af-4182-bf79-33b4119f27ef.png)
+
+## Model's Class-wise Accuracy Score
 
  ![image](https://user-images.githubusercontent.com/61462986/202082047-6690d7cd-1999-4edc-9dc1-53fb9780ee89.png)
 
 
-## Custom Prediction
+
 ![image](https://user-images.githubusercontent.com/61462986/202082179-3337c5d7-fa06-4589-9050-1c2af1785808.png)
 
 
 ![image](https://user-images.githubusercontent.com/61462986/202080762-3dc53e68-dda8-42b8-9a60-16ce9b361967.png)
+
+## Custom Prediction
 
 ![image](https://user-images.githubusercontent.com/61462986/202082120-ff812426-cc96-4a44-9655-f0010568b48c.png)
 
