@@ -84,8 +84,6 @@ As we are dealing with a complex Neural Network (EfficientNetB0) its a good prac
 
 ### Custom Prediction
 
-![image](https://user-images.githubusercontent.com/61462986/202082120-ff812426-cc96-4a44-9655-f0010568b48c.png)
-
 ![image](https://user-images.githubusercontent.com/61462986/202090045-4469ad2b-5366-41ed-8abc-1e5013b55ae6.png)
 
 
