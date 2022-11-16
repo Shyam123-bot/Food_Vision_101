@@ -55,6 +55,7 @@ To take care of these, we'll create a `preprocess_img()` function which:
 
 ## **Building the Model : EfficientNetB1**
 
+Implemented Mixed Precision training and Prefetching to decrease the time taken for the model to train.
 
 ### **Getting the Callbacks ready**
 As we are dealing with a complex Neural Network (EfficientNetB0) its a good practice to have few call backs set up. Few callbacks I will be using throughtout this Notebook are :
