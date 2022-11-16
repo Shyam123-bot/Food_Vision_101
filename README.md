@@ -64,5 +64,7 @@ As we are dealing with a complex Neural Network (EfficientNetB0) its a good prac
  
  * **ReduceLROnPlateau :** Reduce learning rate when a metric has stopped improving.
 
+## Custom Prediction
 
-![image](https://user-images.githubusercontent.com/61462986/202080583-fc32826b-886f-4b6e-96c5-4404addc1ed2.png)
+![image](https://user-images.githubusercontent.com/61462986/202080762-3dc53e68-dda8-42b8-9a60-16ce9b361967.png)
+
