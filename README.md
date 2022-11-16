@@ -71,6 +71,20 @@ To take care of these, we'll create a `preprocess_img()` function which:
 * Resizes an input image tensor to a specified size using [`tf.image.resize()`](https://www.tensorflow.org/api_docs/python/tf/image/resize)
 * Converts an input image tensor's current datatype to `tf.float32` using [`tf.cast()`](https://www.tensorflow.org/api_docs/python/tf/cast)
 
+## **Building the Model : EfficientNetB1**
+
+
+### **Getting the Callbacks ready**
+As we are dealing with a complex Neural Network (EfficientNetB0) its a good practice to have few call backs set up. Few callbacks I will be using throughtout this Notebook are :
+ * **TensorBoard Callback :** TensorBoard provides the visualization and tooling needed for machine learning experimentation
+
+ * **EarlyStoppingCallback :** Used to stop training when a monitored metric has stopped improving.
+ 
+ * **ReduceLROnPlateau :** Reduce learning rate when a metric has stopped improving.
+
+
+ We already have **TensorBoardCallBack** function setup in out helper function, all we have to do is get other callbacks ready.
+
 Run the below cell to see which GPU is allocated to you.
 What we're going to cover
 Using TensorFlow Datasets to download and explore data
