@@ -63,11 +63,15 @@ As we are dealing with a complex Neural Network (EfficientNetB0) its a good prac
  * **EarlyStoppingCallback :** Used to stop training when a monitored metric has stopped improving.
  
  * **ReduceLROnPlateau :** Reduce learning rate when a metric has stopped improving.
- ![image](https://user-images.githubusercontent.com/61462986/202082047-6690d7cd-1999-4edc-9dc1-53fb9780ee89.png)
-
+ 
+ Loss vs Epochs
 ![image](https://user-images.githubusercontent.com/61462986/202082223-83c3a8f2-26c9-455e-97d5-ee833a4b10cc.png)
 
+Accuracy vs Epochs
 ![image](https://user-images.githubusercontent.com/61462986/202082253-0d28ea8e-72af-4182-bf79-33b4119f27ef.png)
+
+ ![image](https://user-images.githubusercontent.com/61462986/202082047-6690d7cd-1999-4edc-9dc1-53fb9780ee89.png)
+
 
 ## Custom Prediction
 ![image](https://user-images.githubusercontent.com/61462986/202082179-3337c5d7-fa06-4589-9050-1c2af1785808.png)
