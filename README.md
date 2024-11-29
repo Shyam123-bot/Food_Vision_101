@@ -6,7 +6,30 @@ A pretrained Image Classification Model EfficientnetB1 was retrained on the infa
 
 The Model actually beats the [**DeepFood**](https://arxiv.org/abs/1606.05675) Paper's model which had an Accuracy of  was **77.4%**  also trained on the same dataset but the interesting thing is, DeepFood's model took 2-3 days to train while our's was around 60min.
 
-> **Dataset :** `Food101`
+## **Key Highlights**
+
+### **Dataset**
+- **Source**: `Food101` dataset from TensorFlow Datasets.
+- **Training Data**: 75,750 images.
+- **Testing Data**: 25,250 images.
+
+### **Model Architecture**
+- **Base Model**: `EfficientNetB0` (pretrained on ImageNet).  
+- **Approach**: Feature extraction followed by fine-tuning.  
+- **Performance**: Outperforms DeepFood's benchmark with a **Top-1 Accuracy of 80.17%**.
+
+### **Techniques Used**
+1. **Mixed Precision Training**  
+   - Achieves faster and memory-efficient computation by combining `float16` and `float32` data types.
+2. **Transfer Learning**  
+   - Utilizes pretrained EfficientNetB0 for feature extraction and fine-tuning.
+3. **Optimized Data Pipeline**  
+   - Employs `tf.data API` with **map**, **shuffle**, **batch**, and **prefetch** for efficient data loading.
+4. **Callbacks for Enhanced Training**  
+   - **Early Stopping**: Stops training if validation performance does not improve.  
+   - **Learning Rate Reduction**: Dynamically adjusts the learning rate when progress stalls.  
+   - **Model Checkpointing**: Saves the best-performing model during training.
+
 
 > **Model :** `EfficientNetB1`
 We're going to be building Food Vision Big™, using all of the data from the Food101 dataset.
@@ -18,18 +41,6 @@ Two methods to significantly improve the speed of our model training:
 Prefetching
 Mixed precision training
 
-### **Checking the GPU**
-
-For this Project we will working with **Mixed Precision**. And mixed precision works best with a with a GPU with compatibility capacity **7.0+**.
-
-At the time of writing, colab offers the following GPU's :
-* Nvidia K80
-* **Nvidia T4**
-* Nvidia P100
-
-Colab allocates a random GPU everytime we factory reset runtime. So you can reset the runtime till you get a **Tesla T4 GPU** as T4 GPU has a rating 7.5.
-
-> In case using local hardware, use a GPU with rating 7.0+ for better results.
 
 
 ## **Preprocessing the Data**
@@ -64,7 +75,30 @@ As we are dealing with a complex Neural Network (EfficientNetB0) its a good prac
  * **EarlyStoppingCallback :** Used to stop training when a monitored metric has stopped improving.
  
  * **ReduceLROnPlateau :** Reduce learning rate when a metric has stopped improving.
- 
+
+## **Performance Details**
+
+| **Metric**            | **Feature Extraction** | **Fine-Tuning** |
+|------------------------|------------------------|-----------------|
+| **Train Accuracy**     | 72.41%                | 94.86%          |
+| **Validation Accuracy**| 72.40%                | 80.17%          |
+| **Test Accuracy**      | 72.79%                | 80.17%          |
+| **Test Loss**          | 0.9993                | 0.9072          |
+
+---
+
+## **Results**
+
+Our fine-tuned model achieved **80.17% top-1 accuracy**, surpassing the **DeepFood benchmark of 77.4%**. 
+
+The exceptional performance was made possible by:
+- **Mixed Precision Training**: Faster computations and efficient memory usage.  
+- **Transfer Learning**: Leveraging pretrained EfficientNetB0 for better generalization.  
+- **Data Pipeline Optimization**: Improved throughput using `tf.data API`.  
+
+This approach significantly reduced training time while delivering superior accuracy, setting a new standard in food image classification. 🍔👁
+
+
 ### Evaluating the results
  
 ### Loss vs Epochs
